@@ -1,0 +1,2 @@
+El enrutamiento es muy sencillo y basico, esta formado por un archivo htaccess que redirecciona de un archivo nombre.html
+al mvc, por lo general mvc\controladores\nombre.php

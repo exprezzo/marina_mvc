@@ -4,7 +4,7 @@
 #
 #=================================================================
 
-define("APP_PATH","../src/marina/");
+define("APP_PATH","../marina_app/");
 define("MZ_TEMA","temas/naturalist/index.html.php");
 
 define('HOST','localhost');

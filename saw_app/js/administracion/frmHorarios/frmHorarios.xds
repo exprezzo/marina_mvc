@@ -1,0 +1,530 @@
+{
+    "name": "frmHorarios.xds",
+    "projectId": "CB17F2C0-A0CF-40A6-9D68-AF84308B7CA1",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "directAPI": "",
+        "spacesToIndent": "4",
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": false,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyPanel",
+            "cid": "panel",
+            "jsClass": "frmAdminHorarios",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "-ext-undefined-",
+                "width": 750,
+                "height": "-ext-undefined-",
+                "unstyled": "-ext-undefined-",
+                "style": "",
+                "bodyStyle": "padding:8px;",
+                "boxMaxWidth": 750,
+                "labelWidth": "-ext-undefined-",
+                "layout": "form",
+                "labelAlign": "top"
+            },
+            "userXType": "frmAdminHorarios",
+            "cn": [
+                {
+                    "id": "MyFieldSet",
+                    "cid": "fieldset",
+                    "jsClass": "MyFieldSet",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "Configuracion de Horarios",
+                        "height": 370,
+                        "style": "",
+                        "labelAlign": "top"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyForm",
+                            "cid": "form",
+                            "jsClass": "MyForm1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Edicion de Horario",
+                                "style": "-ext-undefined-",
+                                "width": 361,
+                                "height": 350,
+                                "frame": true,
+                                "autoRef": "frmEdicion",
+                                "labelAlign": "right",
+                                "labelWidth": "-ext-undefined-"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyToolbar",
+                                    "cid": "toolbar",
+                                    "jsClass": "MyToolbar1",
+                                    "dock": "bbar",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "height": "-ext-undefined-"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyButton",
+                                            "cid": "button",
+                                            "jsClass": "MyButton",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Nuevo",
+                                                "icon": "http://saw/imagenes/add1.png",
+                                                "autoRef": "btnNuevo"
+                                            }
+                                        },
+                                        {
+                                            "id": "MyButton1",
+                                            "cid": "button",
+                                            "jsClass": "MyButton2",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Guardar",
+                                                "icon": "http://saw/imagenes/save_16.png",
+                                                "disabled": true,
+                                                "autoRef": "btnGuardar"
+                                            }
+                                        },
+                                        {
+                                            "id": "MyButton2",
+                                            "cid": "button",
+                                            "jsClass": "MyButton1",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Borrar",
+                                                "disabled": true,
+                                                "icon": "http://saw/imagenes/list_remove.png",
+                                                "autoRef": "btnEliminar"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyFieldSet1",
+                                    "cid": "fieldset",
+                                    "jsClass": "MyFieldSet2",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "-ext-undefined-",
+                                        "labelAlign": "top"
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyTimeField",
+                                            "cid": "timefield",
+                                            "jsClass": "MyTimeField1",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "emptyText": "10:30 AM",
+                                                "fieldLabel": "Fecha Inicio",
+                                                "width": 100,
+                                                "name": "horaInicio"
+                                            }
+                                        },
+                                        {
+                                            "id": "MyTimeField1",
+                                            "cid": "timefield",
+                                            "jsClass": "MyCombo3",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "fieldLabel": "Fecha Fin",
+                                                "anchor": "-ext-undefined-",
+                                                "width": 100,
+                                                "emptyText": "12:00 PM",
+                                                "name": "horaFin"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyFieldSet2",
+                                    "cid": "fieldset",
+                                    "jsClass": "MyFieldSet3",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "My Fields"
+                                    }
+                                },
+                                {
+                                    "id": "MyCheckbox",
+                                    "cid": "checkbox",
+                                    "jsClass": "MyCheckbox",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "can",
+                                        "boxLabel": "-ext-undefined-",
+                                        "anchor": "100%",
+                                        "name": "cancelado",
+                                        "value": "-ext-undefined-",
+                                        "height": "-ext-undefined-"
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "id",
+                                        "anchor": "100%",
+                                        "name": "id",
+                                        "readOnly": true,
+                                        "autoRef": "txtId",
+                                        "hidden": true,
+                                        "hideLabel": true
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField1",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "dispositivoId",
+                                        "anchor": "100%",
+                                        "name": "dispositivoId",
+                                        "readOnly": true,
+                                        "autoRef": "txtIdDispositivo",
+                                        "hidden": true,
+                                        "hideLabel": true
+                                    }
+                                },
+                                {
+                                    "id": "MyTextField2",
+                                    "cid": "textfield",
+                                    "jsClass": "MyTextField2",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "fieldLabel": "dia",
+                                        "anchor": "100%",
+                                        "name": "dia",
+                                        "readOnly": true,
+                                        "autoRef": "txtDia",
+                                        "hidden": true,
+                                        "hideLabel": true
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MyDisplayField",
+                    "cid": "displayfield",
+                    "jsClass": "MyDisplayField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "value": "<div class=\"titulo\">Programación Semanal</div>",
+                        "fieldLabel": "-ext-undefined-",
+                        "anchor": "100%",
+                        "hideLabel": true,
+                        "style": "text-align:center;",
+                        "autoRef": "dspTitulo"
+                    }
+                },
+                {
+                    "id": "MyContainer",
+                    "cid": "container",
+                    "jsClass": "MyContainer2",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "width": 300,
+                        "style": "float:left;"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyGrid",
+                            "cid": "grid",
+                            "jsClass": "gridMonitoreoHorarios",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Horarios del dia",
+                                "store": "stoHorarios",
+                                "width": 282,
+                                "height": 200,
+                                "autoExpandColumn": "colEstado",
+                                "frame": true,
+                                "style": "float:left;",
+                                "boxMaxWidth": 282,
+                                "autoRef": "gridHorarios"
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyColumn",
+                                    "cid": "gridcolumn",
+                                    "jsClass": "MyColumn1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "header": "Hora Inicio",
+                                        "dataIndex": "horaInicio",
+                                        "sortable": true,
+                                        "resizable": "-ext-undefined-",
+                                        "width": 75
+                                    }
+                                },
+                                {
+                                    "id": "MyColumn1",
+                                    "cid": "gridcolumn",
+                                    "jsClass": "MyColumn2",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "header": "Hora Fin",
+                                        "dataIndex": "horaFin",
+                                        "sortable": true,
+                                        "resizable": "-ext-undefined-",
+                                        "width": 66
+                                    }
+                                },
+                                {
+                                    "id": "MyPagingToolbar",
+                                    "cid": "pagingtoolbar",
+                                    "jsClass": "MyPagingToolbar",
+                                    "dock": "bbar",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "store": "(none)",
+                                        "displayInfo": true,
+                                        "displayMsg": "{0} - {1} de {2}",
+                                        "emptyMsg": "No data",
+                                        "pageSize": 12,
+                                        "afterPageText": " "
+                                    }
+                                },
+                                {
+                                    "id": "MyColumn2",
+                                    "cid": "gridcolumn",
+                                    "jsClass": "MyColumn3",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "header": "Cancelado",
+                                        "sortable": true,
+                                        "resizable": "-ext-undefined-",
+                                        "width": 80,
+                                        "dataIndex": "cancelado",
+                                        "id": "colEstado"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MyPanel1",
+                    "cid": "panel",
+                    "jsClass": "MyPanel1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "My Panel"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyFieldSet3",
+                            "cid": "fieldset",
+                            "jsClass": "MyFieldSet",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "title": "Seleccione",
+                                "labelAlign": "top",
+                                "width": 361
+                            },
+                            "cn": [
+                                {
+                                    "id": "MyCombo",
+                                    "cid": "combobox",
+                                    "jsClass": "MyCombo2",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "style": "-ext-undefined-",
+                                        "width": 250,
+                                        "fieldLabel": "Dispositivo",
+                                        "autoRef": "cmbDispositivos",
+                                        "store": "stoDispositivos",
+                                        "mode": "local",
+                                        "triggerAction": "all",
+                                        "id": "cmbDispositivos",
+                                        "displayField": "nombre",
+                                        "valueField": "id"
+                                    }
+                                },
+                                {
+                                    "id": "MyCombo1",
+                                    "cid": "combobox",
+                                    "jsClass": "MyCombo",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "style": "-ext-undefined-",
+                                        "fieldLabel": "Dia de la semana",
+                                        "width": 150,
+                                        "autoRef": "cmbDias",
+                                        "store": "stoDias",
+                                        "mode": "local",
+                                        "itemId": "cmbDias",
+                                        "displayField": "nombre",
+                                        "valueField": "id",
+                                        "triggerAction": "all",
+                                        "hiddenValue": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "MyContainer1",
+                    "cid": "container",
+                    "jsClass": "MyContainer3",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "layout": "form",
+                        "labelAlign": "top",
+                        "style": "float:left;",
+                        "width": 400
+                    }
+                }
+            ]
+        }
+    ],
+    "stores": [
+        {
+            "id": "MyStore",
+            "cid": "jsonstore",
+            "jsClass": "stoDispositivos",
+            "snapToGrid": 10,
+            "userConfig": {
+                "storeId": "stoDispositivos",
+                "root": "data",
+                "url": "/programacion/getDispositivos",
+                "messageProperty": "msg"
+            },
+            "cn": [
+                {
+                    "id": "MyField",
+                    "cid": "datafield",
+                    "jsClass": "MyField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "id"
+                    }
+                },
+                {
+                    "id": "MyField1",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "nombre"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "MyStore1",
+            "cid": "jsonstore",
+            "jsClass": "stoDias",
+            "snapToGrid": 10,
+            "userConfig": {
+                "storeId": "stoDias",
+                "root": "data"
+            },
+            "cn": [
+                {
+                    "id": "MyField2",
+                    "cid": "datafield",
+                    "jsClass": "MyField2",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "id"
+                    }
+                },
+                {
+                    "id": "MyField3",
+                    "cid": "datafield",
+                    "jsClass": "MyField3",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "nombre"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "MyStore2",
+            "cid": "jsonstore",
+            "jsClass": "stoHorarios",
+            "snapToGrid": 10,
+            "userConfig": {
+                "storeId": "stoHorarios",
+                "root": "data",
+                "url": "programacion/getHorarios",
+                "messageProperty": "msg"
+            },
+            "cn": [
+                {
+                    "id": "MyField4",
+                    "cid": "datafield",
+                    "jsClass": "MyField4",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "id"
+                    }
+                },
+                {
+                    "id": "MyField5",
+                    "cid": "datafield",
+                    "jsClass": "MyField5",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "horaInicio",
+                        "type": "string"
+                    }
+                },
+                {
+                    "id": "MyField6",
+                    "cid": "datafield",
+                    "jsClass": "MyField6",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "horaFin"
+                    }
+                },
+                {
+                    "id": "MyField7",
+                    "cid": "datafield",
+                    "jsClass": "MyField7",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "cancelado"
+                    }
+                },
+                {
+                    "id": "MyField8",
+                    "cid": "datafield",
+                    "jsClass": "MyField8",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "dispositivoId"
+                    }
+                },
+                {
+                    "id": "MyField9",
+                    "cid": "datafield",
+                    "jsClass": "MyField9",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "dia"
+                    }
+                }
+            ]
+        }
+    ]
+}

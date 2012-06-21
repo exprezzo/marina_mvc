@@ -13,12 +13,21 @@ class Pagina extends Vista{
 			$this->rutaContenido=MZ_TEMA;
 		}
 	}
+	
+	function asignarSeccion($seccion, $vista){
+			return $this->setSeccion($seccion, $vista);
+	}
 	/* Como la página está compuesta por diferentes secciones, aqui se agrega cada sección  */
 	function setSeccion($seccion, $vista){
 		if ( $vista instanceof Vista){	
 			//Si la vista es válida, se agrega
 			$this->vistas[$seccion]=$vista;					
+		}else if( is_string($vista) ){
+			//verificar que exista el archivo que correspone a la vista.
+			$vista = new Vista($vista );
+			$this->vistas[$seccion] = $vista;
 		}else{
+			
 			/* en caso de que la vista sea incorrecta, ¿Que haremos?
 			en modo development, mostramos mensaje de error, en modo produccion solo un return false y log del error		*/
 			throw new Exception("La vista que intenta agregar es incorrecta");
@@ -39,6 +48,9 @@ class Pagina extends Vista{
 		return true;
 	}
 
+	function mostrarSeccion($seccion){
+		return $this->renderSeccion($seccion);
+	}
 	function renderSeccion($seccion){		
 		if ( isset($this->vistas[$seccion]) && $this->vistas[$seccion] instanceof Vista){	
 			//Si la vista es válida, se muestra
