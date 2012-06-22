@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+	
+	# Enrutamiento mediante htacces de apache	
+	# ¿Se podran agrupar rutas por archivos e incluir esos archivos aqiu?
+	
+    RewriteEngine On
+
+	#RewriteRule ^menu/index.html 	 	mazatleca_core/frontc.php/menu/render [NC,L]      # 
+	#RewriteRule ^index.html 		 	mazatleca_core/frontc.php/default/home [NC,L]     # 
+	#RewriteRule ^home.html 		 	 	mazatleca_core/frontc.php/default/home [NC,L]     # 
+	#RewriteRule ^index.php 		     	mazatleca_core/frontc.php/default/home [NC,L]     # 
+	#RewriteRule ^docs.html 		 	 	mazatleca_core/frontc.php/default/docs [NC,L]     #
+	#RewriteRule ^contact.html 		 	mazatleca_core/frontc.php/default/contact [NC,L]  #
+	#RewriteRule ^download.html 		 	mazatleca_core/frontc.php/default/download [NC,L] #	
+	  	
+	RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /marina_core/frontc.php/$1 [L]
+	ErrorDocument 500 error500.html
+</IfModule>
