@@ -1,8 +1,11 @@
 <?php
 
-class DefaultController extends Controlador{
+
+//class DefaultController extends Controlador{
+class DefaultController{
 		
 	function home($rutaContenido=null ){
+		
 		$this->renderVista('HOME','home.html.php');				
 	}
 	
@@ -27,7 +30,7 @@ class DefaultController extends Controlador{
 	
 	}
 		
-	private function renderVista($menuText,$contenido){		
+	function renderVista($menuText,$contenido){		
 		#===============================================================================================================================
 		#			Preparar las vistas
 		#===============================================================================================================================

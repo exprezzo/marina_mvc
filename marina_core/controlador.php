@@ -1,5 +1,6 @@
 <?php
 
+
 class Controlador{
 
 	function render($vista){
@@ -14,20 +15,20 @@ class Controlador{
 		return $this->model;
 	}
 	
-	private function renderVista($menuText,$contenido){
+	function renderVista($menuText,$contenido){
 
 		#===============================================================================================================================
 		#			Preparar las vistas
 		#===============================================================================================================================
 		$paginaObj= new Pagina();						
 		$menu =  new Menu('default/menu_cms.html.php');		
-		$menu->paginas=$paginas;
+		//$menu->paginas=$paginas;
 		$paginaObj->setSeccion('menu',$menu);	
 		$menu->setMenuActivo($menuText);
 		
 		/* Contenido cargado desde la base de datos*/		
-		$contenido =  new Vista('temas/naturalist/contenido.html.php');
-		$contenido->paginas=$paginas;
+		$contenido =  new Vista($contenido);
+		//$contenido->paginas=$paginas;
 		$paginaObj->setSeccion('contenido',$contenido);
 		/*
 		// FORMA MANUAL: Contenido almacenado en archivos php

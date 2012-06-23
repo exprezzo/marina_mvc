@@ -1,12 +1,13 @@
 <?php 
 
+
 class Pagina extends Vista{
 	var $nombre="Main";
 	var $vistas=array();
 	var $nombreVistaActiva=''; //Esta variable la usaremos para marcar el menu activo y para el titulo de la pagina (el tag <title> dentro del <head> )
 	var $tema;
 	
-	function Pagina($contenido=null){
+	function __construct($contenido=null){		
 		if (isset($contenido)){
 			$this->rutaContenido=$contenido;
 		}else{
@@ -51,13 +52,13 @@ class Pagina extends Vista{
 	function mostrarSeccion($seccion){
 		return $this->renderSeccion($seccion);
 	}
+	
 	function renderSeccion($seccion){		
 		if ( isset($this->vistas[$seccion]) && $this->vistas[$seccion] instanceof Vista){	
 			//Si la vista es válida, se muestra
 			$this->vistas[$seccion]->render();
 			return true;
 		}
-		
 		/*	¿Que haremos en caso de que la vista no sea válida?
 		en modo development, mostramos mensaje de error, en modo produccion solo un return false y log del error		
 		*/

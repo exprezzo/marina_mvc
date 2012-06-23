@@ -9,7 +9,7 @@
 					<p>Blue Whirlpool is a free websites template created by Templates.com team. This website template is optimized for 1024X768 screen resolution. It is also XHTML &amp; CSS valid.</p> 
 					<p>The website template goes with two packages – with PSD source files and without them. PSD source files are available for free for the registered members of Templates.com. The basic package (without PSD is available for anyone without registration).</p> 
 					This website template has several pages: Home, About us, Article (with Article page), Contact us (note that contact us form – doesn’t work), Site Map.
-					<br><br><br><br><br>
+					<br><br><br><br><br><br><br>
 				</div>
 			</div>
 		</div>
