@@ -33,17 +33,9 @@
 							<div class="extra-img"><img alt="extra-img" src="<?php echo APP_PATH ?>/imagenes/extra-img.png" class="png"/></div>
 							<div class="wrapper">
 <!-- nav -->
-								<div id="nav">
-									<ul>
-										<li><a>Home</a></li>
-										<li><a href="aplicaciones">Aplicaciones</a></li>
-										<li><a href="proyectos">Proyectos</a></li>										
-										<li><a href="tutoriales">Tutoriales</a></li>
-										<li><a href="docs">Documentacion</a></li>
-										<li><a href="download">Download</a></li>
-										<li><a href="contacto">Contacto</a></li>										
-									</ul>
-								</div>
+								<?php 
+									$this->mostrarSeccion('menu');	
+								?>
 <!-- content -->
 								<div id="content">
 									<?php

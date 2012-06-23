@@ -1,3 +1,6 @@
+a.selected{
+	color:black !important;
+}
 * {margin:0;padding:0}
 body {font-family:Tahoma, Geneva, sans-serif;font-size:100%;line-height:.9375em;color:#fff;position:relative;background:url(../imagenes/body-bg.gif) center top repeat-y}
 input, textarea, select {font-family:Tahoma, Geneva, sans-serif;font-size:1em}

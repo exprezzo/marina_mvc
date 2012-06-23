@@ -5,20 +5,7 @@
 		<div class="border-left png">
 			<div class="border-right png">
 				<div class="inside png">					
-					<h2>Aplicaciones</h2>
-					<br>
-					<form action='defaultController/crear_app'>
-						Crear Aplicacion<br>
-						<label>Escriba el nombre:</label>
-						<input type="text" name="nombre" />
-						<input type="submit" value="Crear" text="text">
-					</form>
-					<style type='text/css'>
-						a.aplicacion{
-							font-size:20px;
-						}
-					</style>
-					<br><br>
+					<h2>Blogs</h2>
 					<?php imprimeProyectos(); ?>
 				</div>
 			</div>
@@ -29,6 +16,7 @@
 </div>
 
 
+<div></div>
 <?php
  
 function imprimeProyectos(){
@@ -36,7 +24,7 @@ function imprimeProyectos(){
 		/* Esta es la forma correcta de iterar sobre el directorio. */
 		while (false !== ($entrada = readdir($gestor))) {
 			if ($entrada!='.' && $entrada!='..')
-			echo "<a class='aplicacion' href='/app/$entrada'> $entrada</a><br>";
+			echo "<a href='/app/$entrada'> $entrada</a><br>";
 		}    
 	 
 		closedir($gestor);

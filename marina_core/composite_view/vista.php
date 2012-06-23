@@ -62,5 +62,9 @@ class Vista{
 		$this->rutaContenido=$ruta;
 	}
 	
+	function getRutaContenido(){
+		return $this->rutaContenido;
+	}
+	
 }
 ?>

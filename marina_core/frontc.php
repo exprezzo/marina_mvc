@@ -2,8 +2,9 @@
 require_once('init.php');
 
 $arrRuta=array();
-if (isset($_SERVER["REQUEST_URI"])){	
-	 $arrRuta=explode('/',$_SERVER["REQUEST_URI"]);
+//echo "<pre>";print_r($_SERVER);echo "</pre>";
+if (isset($_SERVER["PATH_INFO"])){	
+	 $arrRuta=explode('/',$_SERVER["PATH_INFO"]);
 }
 
 //print_r($arrRuta);
@@ -12,6 +13,7 @@ $app_path='../';
 
 include($app_path.'config.php');
 //-------------------------------------------------------------------------------  
+//echo "<pre>";print_r($arrRuta);echo "</pre>";
 if (sizeof($arrRuta)==2){	
 	$controladorName='DefaultController';
 	include APP_PATH.'controladores/'.$controladorName.'.php';
@@ -19,13 +21,16 @@ if (sizeof($arrRuta)==2){
 	$accion='render';
 	$controller->$accion($arrRuta[1]);
 	return;
+}else if( sizeof($arrRuta)==3 ){
+	$controladorName=$arrRuta[1];
+	$accion=$arrRuta[2];
 }
 
-$controladorName=$arrRuta[0];
+
 include APP_PATH.'controladores/'.$controladorName.'.php';
 $controller=new $controladorName;
 
-$accion=$arrRuta[2];
+
 
 
 $controller->$accion();
