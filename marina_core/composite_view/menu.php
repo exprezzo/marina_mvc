@@ -1,5 +1,7 @@
 <?php 
 
+
+
 class Menu extends Vista{
 	var $menuActivo;
 	function setMenuActivo($menu){

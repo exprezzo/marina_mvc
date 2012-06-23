@@ -1,5 +1,6 @@
 <?php 
 
+
 class Vista{
 	/*
 	$nombre: Es el identificador de la vista, deberia ser unico, usamos un nombre como Home, Index, Nosotros, Contacto. Al mostrarse dentro de una pagina,
@@ -16,18 +17,17 @@ class Vista{
 	//Archivos javascript que se incluirán en el header
 	var $javascripts=array();
 	
-	function Vista($contenido=null,$nombre=null){
+	function __construct($contenido=null,$nombre=null){
 		$this->rutaContenido=$contenido;
 		$this->nombre= $nombre;
 	}
 	
-	function render($rutaContenido=null){
-	
-		if ($rutaContenido!=null){
+	function render($rutaContenido=null){		
+		if (!empty($rutaContenido)){
 			$this->setRutaContenido($rutaContenido);
 		}
 
-		if ( !empty($this->rutaContenido) ){
+		if ( !empty($this->rutaContenido) ){			
 			include APP_PATH.'vistas/'.$this->rutaContenido;
 		}	
 	}
