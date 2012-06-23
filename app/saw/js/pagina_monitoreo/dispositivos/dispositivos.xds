@@ -1,0 +1,164 @@
+{
+    "name": "dispositivos.xds",
+    "projectId": "FCBECCCF-DB05-4A6D-A2B0-A635A9D97C60",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "directAPI": "",
+        "spacesToIndent": "4",
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": false,
+        "exportXDSFiles": true,
+        "genTimestamps": false
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyGrid",
+            "cid": "grid",
+            "jsClass": "gridMonitoreoDispositivos",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "-ext-undefined-",
+                "store": "-ext-undefined-",
+                "width": 297,
+                "height": 290,
+                "autoExpandColumn": "colNombre",
+                "frame": true
+            },
+            "userXType": "gridMonitoreoDispositivos",
+            "cn": [
+                {
+                    "id": "MyColumn1",
+                    "cid": "gridcolumn",
+                    "jsClass": "MyColumn1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "header": "Nombre",
+                        "dataIndex": "nombre",
+                        "sortable": true,
+                        "resizable": "-ext-undefined-",
+                        "width": 150,
+                        "id": "colNombre"
+                    }
+                },
+                {
+                    "id": "MyColumn2",
+                    "cid": "gridcolumn",
+                    "jsClass": "MyColumn2",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "header": "Tipo",
+                        "dataIndex": "tipo",
+                        "sortable": true,
+                        "resizable": "-ext-undefined-",
+                        "width": 100,
+                        "id": "colTipo",
+                        "hidden": true
+                    }
+                },
+                {
+                    "id": "MyColumn3",
+                    "cid": "gridcolumn",
+                    "jsClass": "MyColumn3",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "header": "Estado",
+                        "dataIndex": "estado",
+                        "sortable": true,
+                        "resizable": "-ext-undefined-",
+                        "width": 80
+                    }
+                },
+                {
+                    "id": "MyPagingToolbar",
+                    "cid": "pagingtoolbar",
+                    "jsClass": "MyPagingToolbar",
+                    "dock": "bbar",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "store": "(none)",
+                        "displayInfo": true,
+                        "displayMsg": "{0} - {1} de {2}",
+                        "pageSize": 9,
+                        "emptyMsg": "No data"
+                    }
+                }
+            ]
+        }
+    ],
+    "stores": [
+        {
+            "id": "MyStore",
+            "cid": "jsonstore",
+            "jsClass": "stoMonitoreoDispositivos",
+            "snapToGrid": 10,
+            "userConfig": {
+                "storeId": "-ext-undefined-",
+                "root": "data",
+                "url": "monitoreo/getDispositivos",
+                "messageProperty": "msg",
+                "idProperty": "idDispositivo"
+            },
+            "userXType": "stoMonitoreoDispositivos",
+            "cn": [
+                {
+                    "id": "MyField",
+                    "cid": "datafield",
+                    "jsClass": "MyField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "idDispositivo"
+                    }
+                },
+                {
+                    "id": "MyField1",
+                    "cid": "datafield",
+                    "jsClass": "MyField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "nombre"
+                    }
+                },
+                {
+                    "id": "MyField2",
+                    "cid": "datafield",
+                    "jsClass": "MyField2",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "tipo"
+                    }
+                },
+                {
+                    "id": "MyField3",
+                    "cid": "datafield",
+                    "jsClass": "MyField3",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "imagen"
+                    }
+                },
+                {
+                    "id": "MyField4",
+                    "cid": "datafield",
+                    "jsClass": "MyField4",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "estado"
+                    }
+                },
+                {
+                    "id": "MyField5",
+                    "cid": "datafield",
+                    "jsClass": "MyField5",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "fecha"
+                    }
+                }
+            ]
+        }
+    ]
+}

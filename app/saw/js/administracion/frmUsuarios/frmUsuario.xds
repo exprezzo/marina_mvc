@@ -1,0 +1,153 @@
+{
+    "name": "frmUsuario.xds",
+    "projectId": "8902E801-2B12-4039-A837-CD46C568E925",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "directAPI": "",
+        "spacesToIndent": "4",
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": false,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyForm",
+            "cid": "form",
+            "jsClass": "frmUsuario",
+            "snapToGrid": 10,
+            "userConfig": {
+                "title": "Usuario",
+                "width": 400,
+                "height": 267,
+                "padding": 10,
+                "style": "",
+                "bodyStyle": "padding:8px;"
+            },
+            "cn": [
+                {
+                    "id": "MyTextField",
+                    "cid": "textfield",
+                    "jsClass": "MyTextField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "fieldLabel": "Nombre",
+                        "anchor": "100%"
+                    }
+                },
+                {
+                    "id": "MyTextField1",
+                    "cid": "textfield",
+                    "jsClass": "MyTextField1",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "fieldLabel": "Email",
+                        "anchor": "100%"
+                    }
+                },
+                {
+                    "id": "MyFieldSet",
+                    "cid": "fieldset",
+                    "jsClass": "MyFieldSet",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "Contraseña"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyCheckbox",
+                            "cid": "checkbox",
+                            "jsClass": "MyCheckbox",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Autogenerar",
+                                "boxLabel": "-ext-undefined-",
+                                "anchor": "100%"
+                            }
+                        },
+                        {
+                            "id": "MyTextField2",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Contraseña",
+                                "anchor": "100%"
+                            }
+                        },
+                        {
+                            "id": "MyTextField3",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField3",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Confirmación",
+                                "anchor": "100%"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyToolbar",
+                    "cid": "toolbar",
+                    "jsClass": "MyToolbar",
+                    "dock": "tbar",
+                    "snapToGrid": 10,
+                    "cn": [
+                        {
+                            "id": "MyButton",
+                            "cid": "button",
+                            "jsClass": "MyButton",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Nuevo"
+                            }
+                        },
+                        {
+                            "id": "MyButton1",
+                            "cid": "button",
+                            "jsClass": "MyButton1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Guardar"
+                            }
+                        },
+                        {
+                            "id": "MyButton2",
+                            "cid": "button",
+                            "jsClass": "MyButton2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Eliminar"
+                            }
+                        },
+                        {
+                            "id": "MyButton3",
+                            "cid": "button",
+                            "jsClass": "MyButton3",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "text": "Deshacer"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyButton4",
+                    "cid": "button",
+                    "jsClass": "MyButton4",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "text": "Guardar",
+                        "style": "float:right;margin-right:2px;"
+                    }
+                }
+            ]
+        }
+    ],
+    "stores": []
+}
