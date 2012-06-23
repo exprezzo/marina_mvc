@@ -15,6 +15,10 @@
 	  	
 	RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(app/).*$ marina_core/frontc_app.php/$1 [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ /marina_core/frontc.php/$1 [L]
 	ErrorDocument 500 error500.html
 </IfModule>

@@ -1,3 +1,0 @@
-<script type="text/javascript" src="gridMonitoreoDispositivos.ui.js"></script>
-<script type="text/javascript" src="gridMonitoreoDispositivos.js"></script>
-<script type="text/javascript" src="stoMonitoreoDispositivos.js"></script>
