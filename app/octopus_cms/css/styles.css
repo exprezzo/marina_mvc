@@ -1,0 +1,314 @@
+@import "reset.css";
+
+body {background:#0E76BD url(../imagenes/bg_site.jpg); font-family:Arial;	font-size:12px;	line-height:16px;	color:#000;	margin:0; padding:0; text-align:}
+
+.clear {clear:both;}
+.left{ float:left}
+.right{ float:right}
+a{ outline:none; color:#007BB9}
+a:hover{ text-decoration:none}
+
+/*==== GLOBAL =====*/
+.inner-wrap{font-family:Arial, Helvetica, sans-serif; line-height:18px}
+.header{	height:50px;		margin:0; padding:0;  padding-top:15px; padding-bottom:20px}
+.footer {	height:50px;}
+.main{ width:1000px;  margin: 0 auto}
+.footer a
+{color: #fff}
+
+/*===== header =====*/
+
+.mid H1 a
+{
+font-size: 30px;
+color: #ffffff;
+}
+
+.mid H1 a:hover, .mid H1 a:visited
+{
+font-size: 30px;
+color: #ffffff;
+}
+
+/*====== footer =====*/
+
+#bottom {
+	background: url(../imagenes/bottom.gif) 43px 30px no-repeat;
+	color: #FFFFFF;
+}
+
+#bottom_bot {
+	background: url(../imagenes/bottom.gif) 43px bottom no-repeat;
+	color: #FFFFFF;
+}
+
+#bottom h1 { 
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 100;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+			}
+
+#b_col1 {
+	width: 253px;
+	float: left;
+	margin-left: 43px;
+}
+#b_col2 {
+	width: 253px;
+	float: left;
+	margin-left: 85px;
+}
+#b_col3 {
+	width: 253px;
+	float: left;
+	margin-left: 85px;
+	text-align: left;
+}
+
+
+.box_us {
+width: 244px;
+background: url(../imagenes/box_us.gif) 0px bottom repeat-x;
+}
+
+.box_us_l {
+width: 27px;
+float: left;
+padding-top:3px;}
+
+.box_us_r {
+width: 217px;
+color: #ffffff;
+float: left;}
+
+.lh
+{color: #ffffff;}
+
+
+.spis_bot {
+	list-style:none;
+	padding: 0px 0px 0px 34px;}
+
+.spis_bot li {
+	padding: 7px 0px 0px 18px;
+	background: url(../imagenes/fish2.gif) 0px 12px no-repeat;
+	}
+	
+.spis_bot a {
+	color:#ffffff;
+	text-decoration:none;
+	font-weight: 100;
+	display: block;
+	font-weight:bold;}
+.spis_bot a:hover {
+	text-decoration: underline;
+	}
+	
+.fu_i {
+	padding: 0px 14px 0px 0px;
+	vertical-align: middle ;
+}
+
+#b_col3 ul {
+	list-style:none;
+	padding: 0px 0px 0px 52px;}
+
+#b_col3 li {
+	padding: 8px 0px 2px 0px;
+	background: none;
+	}
+	
+#b_col3 li a {
+	color:#FFFFFF;
+	text-decoration: none;
+	font-weight: bold;}
+	
+#b_col3 li a:hover {
+	text-decoration: underline;
+}
+
+
+.header .nav{ position:relative; height:50px; width:910px; background:url(../imagenes/bg_menu.png) top no-repeat; padding-left:56px; padding-right:24px; }
+.header .nav ul li{	float:left;}
+
+
+.header .nav ul li a{ font-size:35px; color:#fff; text-decoration:none;	display:inline-block; width:145px; height:40px; text-align:center; padding-top: 10px}
+.header .nav ul li.active a{ height: 64px; margin-top: -8px;}
+.header .nav ul li a:hover{ height: 64px; margin-top: -8px;}
+
+
+
+#content{ height:560px;  color:#3a3a3a; font-size:12px}
+#content .conteiner{ position:relative; z-index:1}
+#content .conteiner>.extra-wrap{ width:923px;	overflow:hidden;	position:relative; margin-left:40px}
+#content .pages{ width:7950px;	overflow:hidden;	position:relative;}
+#content .page{	width:923px; height:505px; margin-right:0px; margin-right:40px; position:relative; float:left;}
+
+
+
+div.bg_content{ background:url(../imagenes/bg_content.png) top repeat;  height:445px; margin-top:40px; position:relative; z-index:2}
+div.content{ position: absolute; z-index:1; height:380px; width:850px; padding:35px 0px 0px 35px; overflow:hidden}
+
+#content a.prev{ position:absolute;	left:30px;	top:76px;	background:url(../imagenes/left.png) top no-repeat;	width:22px;	height:30px; z-index:100}
+#content a.prev:hover{	background-position:bottom;}
+
+#content a.next{position:absolute;	right:28px;	top:76px;	background:url(../imagenes/right.png) top no-repeat;	width:22px;	height:30px; z-index:100}
+#content a.next:hover{	background-position: bottom;}
+
+#content strong{ text-transform:uppercase; display:block; font-size:12px; color:#000}
+/*------------------------------------ footer ------------------------------------------------ */
+
+.footer{ font-size:11px; text-align: center; color:#d8f4b7; padding-top: 30px;}
+.footer a.privacy{	color:#fff; text-decoration:underline}
+.footer a.privacy:hover{color:#fff; text-decoration:none}
+
+
+/*===================== Sub Pages =====================*/
+
+div.mid{ width:1000px;  position: absolute;}
+a.bg{ display:block; width:16px; height:16px; background-repeat:no-repeat; background-position:bottom; margin-left:10px; float:left; }
+a.bg:hover{ background-position:top}
+a.bg_1{ background-image:url(../imagenes/img_1.jpg)}
+a.bg_2{ background-image:url(../imagenes/img_2.jpg)}
+a.bg_3{ background-image:url(../imagenes/img_3.jpg)}
+a.bg_4{ background-image:url(../imagenes/img_4.jpg)}
+
+img.line_2{ margin:20px 5px 0}
+.grid_1{ width:500px;}
+.grid_2{ width:315px;}
+.grid_3{ width:270px; }
+.grid_4{ width:200px;}
+.grid_5{ width:280px; margin-left:40px}
+.grid_6{ width:240px; }
+.grid_7{ width:230px; }
+
+
+.more{ font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#007BB9; text-transform:uppercase; cursor:pointer; padding-left:30px; background:url(../imagenes/bg_more.png) left no-repeat; line-height:30px; height:30px; display:block; width:100px; }
+.more:hover{ text-decoration:underline}
+
+.links{ font-size:12px; font-family:Arial, Helvetica, sans-serif; cursor:pointer; padding-left:25px; background:url(../imagenes/bg_links.png) left no-repeat; line-height:20px; display:block; }
+.links:hover{ text-decoration:none}
+
+
+div.pages h1{ color:#383838; font-size:55px; line-height:50px;margin:0; padding:0; margin-bottom:18px}
+div.pages h1 span{ display:block; }
+div.pages h1 span.special_2{ line-height:60px}
+div.pages h1 span.special_3{ font-size:36px; color:#ec581e; margin-left:20px}
+div.pages h2{ color:#444; font-size:30px; margin:0; padding:0; margin-bottom:16px;}
+
+
+ul.li_h li{ margin-bottom:8px}
+
+
+
+.right_20{ margin-right:20px;}
+img.photo{ border:1px #b6b6b6 solid; padding:2px ; background-color:#fff}
+b{ color:#007BB9;!important; text-transform:uppercase; display:block}
+
+
+a.top_links{ display:block; color:#fff; text-decoration:none; height:13px; background:url(../imagenes/bg_top_links.png) left bottom no-repeat; padding-left:20px; float:right}
+a.top_links:hover{ text-decoration: underline; background-position:top left}
+
+
+
+/*===================== Scroll =====================*/
+.scroll-pane {	overflow:hidden; }
+.jScrollPaneContainer {	position: relative;	overflow:hidden	;	z-index: 1;}
+
+.scroll-pane img{ height:91px}
+
+
+.jScrollPaneTrack {	position: absolute;	cursor: pointer;	right: 0;	top: 0;	background: #e7e7e7; width:14px!important}
+.jScrollPaneDrag {	position: absolute;	background:#acacac ;	cursor: pointer;	overflow: hidden;	right:0px;	width:14px!important; margin-top:1px;
+ -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.jScrollPaneDrag:hover{ background:#007BB9}
+.jScrollPaneDragTop { position: absolute;	top: 0;	left: 0; overflow: hidden; height:0px;}
+.jScrollPaneDragBottom { overflow: hidden; height:0px; }
+
+a.jScrollArrowUp {	display: block;	position: absolute;	z-index: 1;	top: 0;	right: 0px;	text-indent: -2000px; overflow: hidden;	height: 14px; background:url(../imagenes/top.gif) left -15px no-repeat; width:14px!important;}
+
+a.jScrollArrowDown { display: block; position: absolute; z-index: 1; bottom: 0;	right: 0px;	text-indent: -2000px; overflow: hidden; height: 14px; background:url(../imagenes/foot.gif) left -15px no-repeat; width:14px!important}
+
+a.jScrollArrowUp:hover, a.jScrollArrowDown:hover{ background-position:top}
+
+
+
+#contact_form td{ color:#000; padding-bottom:2px; vertical-align:top}
+.sub{font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#0f6180; text-transform:uppercase; cursor:pointer; padding-left:10px; background:url(../imagenes/bg_more.jpg) left no-repeat; line-height:30px; height:30px; display:block; width:100px; cursor:pointer; border:0}
+
+.sub:hover{text-decoration:underline}
+.input_contact{background-color:#dcdcdc;
+	width:300px;
+	height:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000;
+	border:1px solid #c2c2c2; margin-bottom:3px}
+	
+.textarea_contact{background-color:#dcdcdc;
+	width:300px;
+	height:200px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000;
+	border:1px solid #c2c2c2; margin-bottom:3px}
+	
+.select{background-color:#dcdcdc;
+	width:130px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#584c3f;
+	border:1px solid #d2dce6;}
+	.red{ color:#f00}
+
+	
+/*===== Slide Show =====*/
+
+#faded {	width:1000px;	height:558px;	overflow: hidden;	position: absolute; z-index:0; background:url(../imagenes/bg_slide.png) center 10px no-repeat}
+#faded ul.show{ margin-left:5px; margin-top:10px}
+
+ul.pagination {
+	width:128px;
+	height:22px;
+	overflow: hidden;
+	position: absolute !important;
+	top:530px; right:44%;
+	z-index:1000;  padding-top:4px
+	
+	
+}
+
+	ul.pagination li { width:18px ; height:18px; float:left; margin-right:2px; margin-left:5px}
+		ul.pagination li a {
+		background: url(../imagenes/disk.png) top no-repeat;
+			display: block;
+			width: 18px;
+			height: 18px;
+			text-decoration: none;
+			 text-indent:-999px;
+		}
+		
+		ul.pagination li a:hover {background: url(../imagenes/disk_act.png) top no-repeat;		}		
+		ul.pagination li.current a {background:url(../imagenes/disk_act.png) top no-repeat;		}
+
+
+
+/*==========================================*/
+
+.notification_error{ height: auto;width: 90%;padding: 4px;background: #ededed; text-align: left; color:#f00; margin-bottom:5px}
+.notification_ok{ border: 0px #567397 solid; height: auto; width: 90%; padding: 8px; background: #f5f9fd; text-align: center;  } 
+.info_fieldset { border: 0px #dddddd solid; }
+.info_fieldset legend { border: 0px #dddddd solid;  color: black;   font: 13px Verdana;  padding: 2px 5px 2px 5px; -moz-border-radius: 3px; }
+
+.button { border: 0px solid #999999;  background: white; color: #007BB9; cursor:pointer; height:30px; width:100px; color:#0f6180; font-size:12px; text-transform:uppercase; text-decoration:underline; background:url(../imagenes/bg_more.png) left 50% no-repeat}
+.button:hover{ text-decoration:none}
+
+/* Label */
+label  { width: 75px;  margin: 0px; float: left; text-align: left; }
+
+/* Input, Textarea */
+input{ margin: 0px; padding: 0px;  float: left; border: 1px solid #a0a1a0;  color: #000; background:#ededed; font: 12px Arial, Helvetica, Arial, sans-serif; height:20px; margin-bottom:3px; width:400px }
+
+textarea{margin: 0px; padding: 0px;  float: left;background:#ededed; border: 1px solid #a0a1a0;  color: #000;   font: 12px Arial, Helvetica, Arial, sans-serif; height:68px; margin-bottom:3px; width:400px }

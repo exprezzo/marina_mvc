@@ -28,7 +28,7 @@ class Vista{
 		}
 
 		if ( !empty($this->rutaContenido) ){			
-			include BASE_PATH.'vistas/'.$this->rutaContenido;
+			include BASE_PATH.'vistas/'.$this->rutaContenido;			
 		}	
 	}
 	

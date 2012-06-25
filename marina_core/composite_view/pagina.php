@@ -23,9 +23,9 @@ class Pagina extends Vista{
 		if ( $vista instanceof Vista){	
 			//Si la vista es válida, se agrega
 			$this->vistas[$seccion]=$vista;					
-		}else if( is_string($vista) ){
+		}else if( is_string( $vista ) ){
 			//verificar que exista el archivo que correspone a la vista.
-			$vista = new Vista($vista );
+			$vista = new Vista( $vista );
 			$this->vistas[$seccion] = $vista;
 		}else{
 			
@@ -79,17 +79,6 @@ class Pagina extends Vista{
 		}
 	}
 	
-	
-	/*function render($rutaContenido=null){
-		//echo $this->getContenido();exit;
-		//echo $this->getContenido();exit;
-		$this->setContenido($rutaContenido);
-		include $this->getContenido();
-	}*/
-	/*Usada por el menu para marcar al menu que corresponde con la vista activa */
-	/*public function getNombreVistaActiva(){
-		return $this->nombreVistaActiva;
-	}*/
 	#================================================================================
 	#				MENU
 	#================================================================================
