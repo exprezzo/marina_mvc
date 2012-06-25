@@ -3,7 +3,7 @@ class Model{
 	function Model(){
 		if ( !isset($this->db) ){
 			try {
-				$db = new PDO('mysql:host=localhost;dbname=saw;charset=UTF-8', 'root', '',array(
+				$db = new PDO('mysql:host=localhost;dbname='.DB_NAME.';charset=UTF-8', 'root', '',array(
 					PDO::ATTR_PERSISTENT => true
 				));				
 				$this->db=$db;

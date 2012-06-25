@@ -1,0 +1,323 @@
+{
+    "name": "catMenus.xds",
+    "projectId": "C8C5A9AF-47A9-4E0A-A762-D781ADEA01DA",
+    "settings": {
+        "urlPrefix": "http://localhost/",
+        "spacesToIndent": 4,
+        "codeGenFormat": "Class",
+        "extPath": "http://extjs.cachefly.net/ext-3.3.1/",
+        "exportPath": ".",
+        "lineEnding": "CRLF",
+        "instantiateStore": true,
+        "exportXDSFiles": true,
+        "genTimestamps": true
+    },
+    "xdsVersion": "1.1.2",
+    "components": [
+        {
+            "id": "MyTabPanel",
+            "cid": "tabpanel",
+            "jsClass": "catMenus",
+            "snapToGrid": 10,
+            "userConfig": {
+                "activeTab": 0,
+                "width": 435,
+                "height": 293
+            },
+            "cn": [
+                {
+                    "id": "MyGrid",
+                    "cid": "grid",
+                    "jsClass": "MyGrid",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "Listado",
+                        "store": "stoCmsMenus",
+                        "autoRef": "gridMenus"
+                    },
+                    "cn": [
+                        {
+                            "id": "MyToolbar",
+                            "cid": "toolbar",
+                            "jsClass": "MyToolbar",
+                            "dock": "tbar",
+                            "snapToGrid": 10,
+                            "cn": [
+                                {
+                                    "id": "MyButton",
+                                    "cid": "button",
+                                    "jsClass": "MyButton",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Nuevo"
+                                    }
+                                },
+                                {
+                                    "id": "MyButton1",
+                                    "cid": "button",
+                                    "jsClass": "MyButton1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Editar"
+                                    }
+                                },
+                                {
+                                    "id": "MyButtonGroup",
+                                    "cid": "buttongroup",
+                                    "jsClass": "MyButtonGroup",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "-ext-undefined-",
+                                        "columns": 2
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyButton4",
+                                            "cid": "button",
+                                            "jsClass": "MyButton4",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Activar",
+                                                "enableToggle": true,
+                                                "pressed": true
+                                            }
+                                        },
+                                        {
+                                            "id": "MyButton5",
+                                            "cid": "button",
+                                            "jsClass": "MyButton5",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Desactivar",
+                                                "enableToggle": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyButton2",
+                                    "cid": "button",
+                                    "jsClass": "MyButton2",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Eliminar"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyPagingToolbar",
+                            "cid": "pagingtoolbar",
+                            "jsClass": "MyPagingToolbar",
+                            "dock": "bbar",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "store": "stoCmsMenus"
+                            }
+                        },
+                        {
+                            "id": "MyColumn",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "header": "id",
+                                "dataIndex": "id",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 100
+                            }
+                        },
+                        {
+                            "id": "MyColumn2",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "header": "texto",
+                                "dataIndex": "texto",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 100
+                            }
+                        },
+                        {
+                            "id": "MyColumn3",
+                            "cid": "gridcolumn",
+                            "jsClass": "MyColumn3",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "header": "target",
+                                "dataIndex": "target",
+                                "sortable": true,
+                                "resizable": "-ext-undefined-",
+                                "width": 100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "MyForm",
+                    "cid": "form",
+                    "jsClass": "MyForm",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "title": "Edicion",
+                        "autoRef": "frmMenu",
+                        "forceLayout": true
+                    },
+                    "cn": [
+                        {
+                            "id": "MyToolbar1",
+                            "cid": "toolbar",
+                            "jsClass": "MyToolbar1",
+                            "dock": "tbar",
+                            "snapToGrid": 10,
+                            "cn": [
+                                {
+                                    "id": "MyButton7",
+                                    "cid": "button",
+                                    "jsClass": "MyButton7",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Nuevo",
+                                        "autoRef": "btnNuevo"
+                                    }
+                                },
+                                {
+                                    "id": "MyButton3",
+                                    "cid": "button",
+                                    "jsClass": "MyButton3",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Guardar",
+                                        "autoRef": "btnGuardar"
+                                    }
+                                },
+                                {
+                                    "id": "MyButtonGroup1",
+                                    "cid": "buttongroup",
+                                    "jsClass": "MyButtonGroup1",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "title": "-ext-undefined-",
+                                        "columns": 2
+                                    },
+                                    "cn": [
+                                        {
+                                            "id": "MyButton8",
+                                            "cid": "button",
+                                            "jsClass": "MyButton8",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Activar",
+                                                "enableToggle": true,
+                                                "pressed": true
+                                            }
+                                        },
+                                        {
+                                            "id": "MyButton9",
+                                            "cid": "button",
+                                            "jsClass": "MyButton9",
+                                            "snapToGrid": 10,
+                                            "userConfig": {
+                                                "text": "Desactivar",
+                                                "enableToggle": true,
+                                                "pressed": "-ext-undefined-"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "MyButton6",
+                                    "cid": "button",
+                                    "jsClass": "MyButton6",
+                                    "snapToGrid": 10,
+                                    "userConfig": {
+                                        "text": "Eliminar"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "MyTextField",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "id",
+                                "anchor": "100%",
+                                "name": "id"
+                            }
+                        },
+                        {
+                            "id": "MyTextField1",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField1",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Texto",
+                                "anchor": "100%",
+                                "name": "texto"
+                            }
+                        },
+                        {
+                            "id": "MyTextField2",
+                            "cid": "textfield",
+                            "jsClass": "MyTextField2",
+                            "snapToGrid": 10,
+                            "userConfig": {
+                                "fieldLabel": "Target",
+                                "anchor": "100%",
+                                "name": "target"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "stores": [
+        {
+            "id": "MyStore",
+            "cid": "jsonstore",
+            "jsClass": "stoCmsMenus",
+            "snapToGrid": 10,
+            "userConfig": {
+                "storeId": "stoCmsMenus",
+                "url": "menus/getList",
+                "root": "data",
+                "messageProperty": "msg"
+            },
+            "cn": [
+                {
+                    "id": "MyField",
+                    "cid": "datafield",
+                    "jsClass": "MyField",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "id"
+                    }
+                },
+                {
+                    "id": "MyField2",
+                    "cid": "datafield",
+                    "jsClass": "MyField2",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "texto"
+                    }
+                },
+                {
+                    "id": "MyField3",
+                    "cid": "datafield",
+                    "jsClass": "MyField3",
+                    "snapToGrid": 10,
+                    "userConfig": {
+                        "name": "target"
+                    }
+                }
+            ]
+        }
+    ]
+}

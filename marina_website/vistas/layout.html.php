@@ -7,7 +7,7 @@
 <meta name="description" content="Place your description here" />
 <meta name="keywords" content="put, your, keyword, here" />
 <meta name="author" content="Templates.com - website templates provider" />
-<link href="<?php echo APP_PATH ?>/css/style.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo RESOURCES_PATH ?>css/style.css" rel="stylesheet" type="text/css" />
 <!--[if lt IE 7]><script type="text/javascript" src="ie_png.js"></script><script type="text/javascript">ie_png.fix('.png, #nav li a, .button span, .button a');</script><![endif]--> 
 </head>
 
@@ -25,12 +25,12 @@
 							<div id="header">
 								<h1><a>Marina MVC</a><span>Una arquitectura MVC para PHP! </span></h1>
 								<ul class="top-links">
-									<li><a><img alt="home" src="<?php echo APP_PATH ?>/imagenes/icon-home.gif" /></a></li>
-									<li><a href="contact.html"><img alt="mail" src="<?php echo APP_PATH ?>/imagenes/icon-mail.gif" /></a></li>
-									<li><a href="sitemap.html"><img alt="map" src="<?php echo APP_PATH ?>/imagenes/icon-map.gif" /></a></li>
+									<li><a><img alt="home" src="<?php echo RESOURCES_PATH ?>imagenes/icon-home.gif" /></a></li>
+									<li><a href="contact.html"><img alt="mail" src="<?php echo RESOURCES_PATH ?>imagenes/icon-mail.gif" /></a></li>
+									<li><a href="sitemap.html"><img alt="map" src="<?php echo RESOURCES_PATH ?>imagenes/icon-map.gif" /></a></li>
 								</ul>
 							</div>
-							<div class="extra-img"><img alt="extra-img" src="<?php echo APP_PATH ?>/imagenes/extra-img.png" class="png"/></div>
+							<div class="extra-img"><img alt="extra-img" src="<?php echo RESOURCES_PATH ?>imagenes/extra-img.png" class="png"/></div>
 							<div class="wrapper">
 <!-- nav -->
 								<?php 
@@ -48,7 +48,7 @@
 						<div id="footer">
 							<div class="indent">
 								<div class="fleft">Copyrights - Type in Your Name Here</div>
-								<div class="fright">Designed by: <a href="http://www.templates.com/" title="templates.com - website templates provider"><img alt="website templates" src="<?php echo APP_PATH ?>/imagenes/templates-logo.gif" /></a>&nbsp; Administrado con Octopus CMS</div>
+								<div class="fright">Designed by: <a href="http://www.templates.com/" title="templates.com - website templates provider"><img alt="website templates" src="<?php echo RESOURCES_PATH ?>imagenes/templates-logo.gif" /></a>&nbsp; Administrado con Octopus CMS</div>
 							</div>
 						</div>
 					</div>

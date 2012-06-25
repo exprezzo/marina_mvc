@@ -1,0 +1,1 @@
+agregar un css y js por defecto, al js agregar namespace

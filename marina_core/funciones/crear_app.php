@@ -50,7 +50,7 @@ function crearConfig($ruta){
 #
 #=================================================================
 
-//define("APP_PATH","../'.$ruta.'/");
+define("BASE_PATH","'.$ruta.'/");
 define("MZ_TEMA","/index.html.php");
 
 define("HOST","localhost");

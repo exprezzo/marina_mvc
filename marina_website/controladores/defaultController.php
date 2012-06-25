@@ -1,9 +1,14 @@
 <?php
-
-
 //class DefaultController extends Controlador{
 class DefaultController{			
 	//funcion generica para cargar vistas
+	
+	public function home(){
+		$vista='home.html.php';
+		//$vista=APP_PATH.'/vistas/'.$vista.'html.php';
+		//echo $vista;
+		$this->renderVista('',$vista);
+	}
 	
 	public function render($vista){
 		$vista=$vista.'.html.php';
@@ -36,5 +41,6 @@ class DefaultController{
 		$paginaObj->asignarSeccion('menu', $menu);		
 		$paginaObj->render();				
 	}
+	
 }
 ?>

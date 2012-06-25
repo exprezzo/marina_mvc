@@ -1,0 +1,3 @@
+<script type="text/javascript" src="catMenus.ui.js"></script>
+<script type="text/javascript" src="catMenus.js"></script>
+<script type="text/javascript" src="stoCmsMenus.js"></script>
