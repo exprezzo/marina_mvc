@@ -22,7 +22,8 @@
             "userConfig": {
                 "activeTab": 0,
                 "width": 435,
-                "height": 293
+                "height": 293,
+                "forceLayout": true
             },
             "cn": [
                 {

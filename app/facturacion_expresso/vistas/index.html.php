@@ -22,7 +22,7 @@
 <!-- header -->
 		<header>
 			<div id="logo_box">
-				<h1><a href="index.html" id="logo">The Art of Business <span>Clients Choose Us!</span></a></h1>
+				<h1><a href="index.html" id="logo">Facturaci&oacute;n Expresso<span>On the shoulder of gigants!</span></a></h1>
 			</div>
 			<nav>
 				<?php $this->mostrarSeccion('menu'); ?>
