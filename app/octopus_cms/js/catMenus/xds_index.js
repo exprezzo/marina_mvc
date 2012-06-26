@@ -13,7 +13,7 @@
 Ext.onReady(function() {
     Ext.QuickTips.init();
     var cmp1 = new catMenus({
-        renderTo: Ext.getBody()
+        renderTo: 'div_cat_menus'
     });
     cmp1.show();
 });

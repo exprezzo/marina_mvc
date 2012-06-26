@@ -143,8 +143,8 @@ float: left;}
 #content{ height:560px;  color:#3a3a3a; font-size:12px}
 #content .conteiner{ position:relative; z-index:1}
 #content .conteiner>.extra-wrap{ width:923px;	overflow:hidden;	position:relative; margin-left:40px}
-#content .pages{ width:7950px;	overflow:hidden;	position:relative;}
-#content .page{	width:923px; height:505px; margin-right:0px; margin-right:40px; position:relative; float:left;}
+#content .pages{ /*width:7950px;*/	overflow:hidden;	position:relative;}
+#content .page{	/*width:923px;*/ height:505px; margin-right:0px; margin-right:40px; position:relative; float:left;}
 
 
 
