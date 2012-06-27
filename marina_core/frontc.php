@@ -23,10 +23,7 @@ for($i=0; $i<$numRutas-1; $i++){
 		$back.='../';
 }
 define ('RESOURCES_PATH',$back.BASE_PATH );
-//echo $back; exit;
 
-echo RESOURCES_PATH.'<br>';
-echo BASE_PATH;
 
 #===============================================================
 if (sizeof($arrRuta)==2){	

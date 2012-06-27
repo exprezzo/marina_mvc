@@ -23,10 +23,11 @@ class Vista{
 	}
 	
 	function render($rutaContenido=null){		
+		
 		if (!empty($rutaContenido)){
 			$this->setRutaContenido($rutaContenido);
 		}
-
+		
 		if ( !empty($this->rutaContenido) ){			
 			include BASE_PATH.'vistas/'.$this->rutaContenido;			
 		}	

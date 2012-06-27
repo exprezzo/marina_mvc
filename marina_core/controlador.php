@@ -7,7 +7,7 @@ class Controlador{
 		$vista=$vista.'.html.php';
 		//$vista=APP_PATH.'/vistas/'.$vista.'html.php';
 		//echo $vista;
-		$this->renderVista('',$vista);
+		$this->renderVista($vista);
 	}
 
 	function getModelObject(){

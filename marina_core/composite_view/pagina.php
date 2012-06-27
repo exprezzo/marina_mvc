@@ -20,12 +20,15 @@ class Pagina extends Vista{
 	}
 	/* Como la página está compuesta por diferentes secciones, aqui se agrega cada sección  */
 	function setSeccion($seccion, $vista){
+		
 		if ( $vista instanceof Vista){	
 			//Si la vista es válida, se agrega
 			$this->vistas[$seccion]=$vista;					
 		}else if( is_string( $vista ) ){
 			//verificar que exista el archivo que correspone a la vista.
+			
 			$vista = new Vista( $vista );
+			
 			$this->vistas[$seccion] = $vista;
 		}else{
 			
@@ -55,7 +58,7 @@ class Pagina extends Vista{
 	
 	function renderSeccion($seccion){		
 		if ( isset($this->vistas[$seccion]) && $this->vistas[$seccion] instanceof Vista){	
-			//Si la vista es válida, se muestra
+			//Si la vista es válida, se muestra			
 			$this->vistas[$seccion]->render();
 			return true;
 		}

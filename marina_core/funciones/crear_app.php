@@ -79,9 +79,15 @@ function crearHtaccess($ruta){
 function crearControladorDefault($ruta,$proyectName){
 	$contenido='<?php
 class DefaultController extends Controlador{
-	
-	function home(){
-		$this->renderVista(\'HOME\',\'home.html.php\');				
+
+	function renderVista($contenido){		
+		#===============================================================================================================================
+		#			Preparar las vistas
+		#===============================================================================================================================
+		$paginaObj= new Pagina(\'index.html.php\');											
+		$paginaObj->asignarSeccion(\'contenido\', $contenido);
+		
+		$paginaObj->render();				
 	}
 }
 ?>
