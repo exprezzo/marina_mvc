@@ -24,35 +24,26 @@ border-radius: 25px;
 }
 
 </style>
-<script type='text/css'>
-	window.addEvent('domready', function(){
 
-  new Drag.Move($('drag'), {
-
-    container: $('container'),
-
-    droppables: $$('.drop'),
-
-    onEnter: function(element, droppable){
-      droppable.setStyle('background', '#E79D35');
-    },
-
-    onLeave: function(element, droppable){
-      droppable.setStyle('background', '#6B7B95');
-    },
-
-    onDrop: function(element, droppable){
-      if (droppable) droppable.setStyle('background', '#C17878');
-    }
-
-  });
-
-});
-</script>
+<link rel="stylesheet" type="text/css" href="http://localhost/ext-3.4.0/resources/css/ext-all.css"/>
+<script type="text/javascript" src="http://localhost/ext-3.4.0/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="http://localhost/ext-3.4.0/ext-all-debug.js"></script>
+	<script type='text/javascript' >
+		Ext.onReady(function(){
+			escena=Ext.select( 'div.escena');
+			escena.on('click',function(){
+					console.log(arguments);
+					alert( arguments[1].myid );
+					alert(Ext.get(arguments[1]).getAttribute('myid') );
+				},this,{delegate:'div.obj_escena'}			
+			);
+		});
+	
+	</script>
 <div class='escena'>
 	<?php 
 		foreach($this->objetos as $objeto){
-			echo '<div class="obj_escena" style=\'margin-left:'.$objeto['x'].'px; margin-top:'.$objeto['y'].'px;\'></div>';			
+			echo '<div class="obj_escena" myid="'.$objeto['id'].'" style=\'margin-left:'.$objeto['x'].'px; margin-top:'.$objeto['y'].'px;\'></div>';			
 		}
 	?>
 	<!--div class="obj_escena" style='margin-left:750px; margin-top:50px;'></div>
