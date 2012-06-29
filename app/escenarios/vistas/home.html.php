@@ -29,11 +29,35 @@ border-radius: 25px;
 <script type="text/javascript" src="http://localhost/ext-3.4.0/adapter/ext/ext-base.js"></script>
 <script type="text/javascript" src="http://localhost/ext-3.4.0/ext-all-debug.js"></script>
 	<script type='text/javascript' >
+		$numsJs=new Array();
+		<?php 
+			$numsJs=array();
+			
+			
+			foreach($this->numeros as $numero){				
+				if  ( !isset($numsJs['fk_objeto'])  ){
+				
+					$numsJs[$numero['fk_objeto']]=array(
+						'"'.$numero['fk_idioma'].'"'=> '"'.$numero['nombre'].'"'
+					);
+					
+					echo '$numsJs['.$numero['fk_objeto'].'] = {id_'.$numero['fk_idioma'].' :"'.$numero['nombre'].'" };';
+					
+					
+				}else{
+					
+				}
+				
+					
+				
+				
+			}
+			
+		?>
 		Ext.onReady(function(){
 			escena=Ext.select( 'div.escena');
 			escena.on('click',function(){
-					console.log(arguments);
-					alert( arguments[1].myid );
+					console.log(arguments);					
 					alert(Ext.get(arguments[1]).getAttribute('myid') );
 				},this,{delegate:'div.obj_escena'}			
 			);
