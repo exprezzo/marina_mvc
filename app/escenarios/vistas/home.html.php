@@ -35,17 +35,20 @@ border-radius: 25px;
 			
 			
 			foreach($this->numeros as $numero){				
-				if  ( !isset($numsJs['fk_objeto'])  ){
+				if  ( !isset($numsJs[$numero['fk_objeto']])  ){
 				
 					$numsJs[$numero['fk_objeto']]=array(
-						'"'.$numero['fk_idioma'].'"'=> '"'.$numero['nombre'].'"'
+						$numero['fk_idioma'] => '"'.$numero['nombre'].'"'
 					);
 					
-					echo '$numsJs['.$numero['fk_objeto'].'] = {id_'.$numero['fk_idioma'].' :"'.$numero['nombre'].'" };';
+					echo '$numsJs['.$numero['fk_objeto'].'] = {'.$numero['fk_idioma'].' :"'.$numero['nombre'].'" };'.chr(10);
 					
 					
 				}else{
+					$numsJs[$numero['fk_objeto']][ $numero['fk_idioma']] =  $numero['nombre'] ;
 					
+					
+					echo '$numsJs['.$numero['fk_objeto'].'].id'.$numero['fk_idioma'].' = "'.$numero['nombre'].'";'.chr(10);
 				}
 				
 					
