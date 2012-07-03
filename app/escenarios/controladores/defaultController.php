@@ -4,7 +4,7 @@ class DefaultController extends Controlador{
 		#===============================================================================================================================
 		#			Obtener los objetos de la base de datos
 		#===============================================================================================================================
-		$sql='SELECT * FROM idioma_objeto ORDER BY fk_idioma';		
+		$sql='SELECT * FROM panorama_subtitulos ORDER BY fk_idioma';		
 		$model=new Model();
 		$db=$model->getDb();
 		$sth=$db->prepare($sql);		
@@ -26,7 +26,7 @@ class DefaultController extends Controlador{
 		#===============================================================================================================================
 		#			Obtener los objetos de la base de datos
 		#===============================================================================================================================
-		$sql='SELECT * FROM esc_objecto';		
+		$sql='SELECT * FROM panorama_objetos';		
 		$model=new Model();
 		$db=$model->getDb();
 		$sth=$db->prepare($sql);		
