@@ -33,7 +33,7 @@ border-radius: 25px;
 		
 		$numsJs.obj_1={
 			principal:'UNO',
-			secundario:'ONE'
+			secundario:'ONE',
 		};
 		
 		$numsJs.obj_2={
@@ -136,10 +136,10 @@ border-radius: 25px;
 	<script type="">
 	
 	</script>
-	
+
+
 	<audio controls="controls" autoplay="autoplay">
-	  <source src="http://marina_mvc/js/elcoco.mp3" type="audio/mp3" />
-	  
+	  <source src="http://marina_mvc/app/escenarios/js/elcoco.mp3" type="audio/mpeg" />	  
 	  Your browser does not support the audio element.
 	</audio>
 	<!--div class="obj_escena" style='margin-left:750px; margin-top:50px;'></div>
