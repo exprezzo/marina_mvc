@@ -130,6 +130,10 @@ border-radius: 25px;
 	<?php 
 		foreach($this->objetos as $objeto){
 			echo '<div class="obj_escena" myid="'.$objeto['id'].'" style=\'margin-left:'.$objeto['x'].'px; margin-top:'.$objeto['y'].'px;\'></div>';			
+			echo '<div>
+				<div class="principal" style=\'margin-left:0px; margin-top:'.$objeto['y'].'px;\'>Principal</div>
+				<div class="secundario">Secundario</div>
+				</div>';
 		}
 	?>
 	
