@@ -7,14 +7,14 @@ class DefaultController{
 		$vista='home.html.php';
 		//$vista=APP_PATH.'/vistas/'.$vista.'html.php';
 		//echo $vista;
-		$this->renderVista('',$vista);
+		$this->renderVista($vista);
 	}
 	
 	public function render($vista){
 		$vista=$vista.'.html.php';
 		//$vista=APP_PATH.'/vistas/'.$vista.'html.php';
 		//echo $vista;
-		$this->renderVista('',$vista);
+		$this->renderVista($vista);
 	}
 	
 	public function crear_app(){
@@ -28,7 +28,7 @@ class DefaultController{
 		header('Location: /aplicaciones');
 	}
 	
-	function renderVista($menuText,$contenido){		
+	function renderVista($contenido){		
 		#===============================================================================================================================
 		#			Preparar las vistas
 		#===============================================================================================================================
