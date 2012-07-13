@@ -8,12 +8,19 @@ require_once ('BasicView.php');
  */
 class View extends BasicView
 {
-
-	function View()
-	{
+	
+	function getNombre(){
+		return $this->nombre;
 	}
-
-
+	
+	function setNombre($nombre){
+		//verificar que el nombre sea una cadena
+		if (is_string($nombre)){
+			$this->nombre=$nombre;
+		}else{
+			throw new Exception("Debe establecer una cadena para el nombre");
+		}		
+	}
 
 }
 ?>

@@ -33,18 +33,7 @@ class Vista{
 		}	
 	}
 	
-	function getNombre(){
-		return $this->nombre;
-	}
 	
-	function setNombre($nombre){
-		//verificar que el nombre sea una cadena
-		if (is_string($nombre)){
-			$this->nombre=$nombre;
-		}else{
-			throw new Exception("Debe establecer una cadena para el nombre");
-		}		
-	}
 	
 	function setRutaContenido($ruta){
 		if (!empty($contenido) ) $this->rutaContenido=$contenido;

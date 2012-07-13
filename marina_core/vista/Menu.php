@@ -1,5 +1,5 @@
 <?php
-require_once ('View.php');
+//require_once ('View.php');
 
 /**
  * @author cbibriesca
@@ -8,23 +8,24 @@ require_once ('View.php');
  */
 class Menu extends View
 {
-
-	function Menu()
-	{
+	var $menuActivo;
+	
+	
+	function setMenuActivo($menu){
+		$this->menuActivo=$menu;
 	}
-
-
-
-	function getMenuActivo()
-	{
+	
+	
+	function getMenuActivo(){
+		return $this->menuActivo;
 	}
-
-	function getMenuState()
-	{
-	}
-
-	function setMenuActivo()
-	{
+	
+	function getMenuState($nombreMenu){	
+		if ( strtoupper($this->getMenuActivo()) == strtoupper($nombreMenu) ){			
+			echo MENU_ACTIVE_CLASS;			
+		}else{
+			echo MENU_INACTIVE_CLASS;
+		}
 	}
 
 }

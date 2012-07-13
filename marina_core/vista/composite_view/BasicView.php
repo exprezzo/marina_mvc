@@ -9,14 +9,10 @@
 class BasicView
 {
 
-	function BasicView()
-	{
-	}
-
 	function __construct($contenido=null,$nombre=null){
 		$this->rutaContenido=$contenido;
 		$this->nombre= $nombre;
-	}
+	}		
 	
 	function render($rutaContenido=null){		
 		
@@ -26,17 +22,28 @@ class BasicView
 		
 		if ( !empty($this->rutaContenido) ){			
 			include BASE_PATH.'vistas/'.$this->rutaContenido;			
-		}	
+		}			
 	}
-
 	
-
-	function setContenido()
-	{
+	function setRutaContenido($ruta){
+		if (!empty($contenido) ) $this->rutaContenido=$contenido;
+		
+		/*
+		//Verificar que el archivo existe;
+		//if (file_exists($ruta) ){
+		
+		}
+		else{
+		
+		}
+		
+		*/
+		
+		$this->rutaContenido=$ruta;
 	}
-
-	function setRutaContenido()
-	{
+	
+	function getRutaContenido(){
+		return $this->rutaContenido;
 	}
 
 }

@@ -1,7 +1,7 @@
 <?php 
 
 
-class Pagina extends Vista{
+class Pagina extends View{
 	var $nombre="Main";
 	var $vistas=array();
 	var $nombreVistaActiva=''; //Esta variable la usaremos para marcar el menu activo y para el titulo de la pagina (el tag <title> dentro del <head> )
@@ -21,13 +21,13 @@ class Pagina extends Vista{
 	/* Como la página está compuesta por diferentes secciones, aqui se agrega cada sección  */
 	function setSeccion($seccion, $vista){
 		
-		if ( $vista instanceof Vista){	
+		if ( $vista instanceof View){	
 			//Si la vista es válida, se agrega
 			$this->vistas[$seccion]=$vista;					
 		}else if( is_string( $vista ) ){
 			//verificar que exista el archivo que correspone a la vista.
 			
-			$vista = new Vista( $vista );
+			$vista = new View( $vista );
 			
 			$this->vistas[$seccion] = $vista;
 		}else{
@@ -57,7 +57,7 @@ class Pagina extends Vista{
 	}
 	
 	function renderSeccion($seccion){		
-		if ( isset($this->vistas[$seccion]) && $this->vistas[$seccion] instanceof Vista){	
+		if ( isset($this->vistas[$seccion]) && $this->vistas[$seccion] instanceof View){	
 			//Si la vista es válida, se muestra			
 			$this->vistas[$seccion]->render();
 			return true;
