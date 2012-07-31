@@ -1,0 +1,63 @@
+.escena{
+	border-radius: 20px 20px 20px 20px;
+	background: none repeat scroll 0 0 #E9EAEE;
+    border: 2px solid #FFFFFF;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+   // padding: 44px 40px 20px;
+    
+    width: 1280px;
+	height: 960px;
+	
+	//position: absolute;
+	margin-top:50px;
+}
+
+.escenas{
+	border-width:1px;border-style:solid;
+	float:left;
+	height:400px;
+	width:200px;
+	margin-left:20px;
+	border-radius: 20px 20px 20px 20px;
+}
+audio{
+	visibility:hidden;
+	
+}
+
+
+.opciones{
+	border-width:1px;border-style:solid;
+	float:right;
+	cursor:progress;
+}
+.opcion{
+	clear:both;
+}
+.play:hover{
+	cursor:pointer;
+	border-width:1px;border-style:solid;
+}
+.subtitulo{
+	float:left;
+	border-width:1px;border-style:solid;
+	background-color:blue;
+	text-align:center;
+}
+.play{
+	cursor:pointer;
+	border-width:1px;border-style:solid;
+	display:inline-block;
+	float:right;
+}
+.sujeto_wrapper{
+	outline-color:black;outline-width:5px;
+	border-width:1px;border-style:solid;
+	position:absolute;
+}
+.imagen{
+	border-width:1px;border-style:solid;
+	cursor:move;
+	float:left;
+}

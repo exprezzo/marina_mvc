@@ -3,53 +3,7 @@ TODO
 Los sonidos solo han funcionado en Chrome,
 El aumentar y disminuir el tamaño de la imagen ocasiona problemas en Chrome
 -->
-<style type="text/css">
-.escena{
-	border-radius: 20px 20px 20px 20px;
-	background: none repeat scroll 0 0 #E9EAEE;
-    border: 2px solid #FFFFFF;
-    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-   // padding: 44px 40px 20px;
-    
-    width: 1280px;
-	height: 960px;
-	
-	//position: absolute;
-	margin-top:50px;
-}
 
-.obj_escena{
-	/*background: none repeat scroll 0 0 black;
-	width: 40px;
-	height: 40px;
--webkit-border-radius: 25px;
--moz-border-radius: 25px;
-border-radius: 25px;*/
-	position:absolute;
-}
-
-.opciones_wrapper{
-	background: none repeat scroll 0 0 black;
-	position:relative;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-	color:white;
-	margin-left:142px;
-	margin-top:30px;
-}
-.obj_opciones{
-	
-}
-
-.btn_audio:hover{
-	cursor:pointer;
-}
-audio{
-	visibility:hidden;
-}
-</style>
 
 <link rel="stylesheet" type="text/css" href="http://localhost/ext-3.4.0/resources/css/ext-all.css"/>
 <script type="text/javascript" src="http://localhost/ext-3.4.0/adapter/ext/ext-base.js"></script>
@@ -116,11 +70,51 @@ audio{
 		}
 		
 	</script>
+<style type="text/css">
+
+
+
+.opciones_wrapper{
+	background: none repeat scroll 0 0 black;
+	position:relative;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+	color:white;
+	margin-left:142px;
+	margin-top:30px;
+}
+
+
+
+
+
+
+</style>
+
 <div class='escena'>
 	<img class ="escena" src="<?php echo RESOURCES_PATH.$this->escena['ruta_imagen']; ?>" style="top:0px;position:absolute;" /img>
 	<?php 		
 		foreach($this->objetos as $objeto){
 			echo 
+			'<div class="sujeto_wrapper" style=\'margin-left:'.$objeto['x'].'px; margin-top:'.$objeto['y'].'px;\' id="sujeto_id_'.$objeto['id'].'">							
+				<img class="imagen" id="obj_img_id_'.$objeto['id'].'"  src='.RESOURCES_PATH.$objeto['ruta_imagen'].' alt="img" />				
+				<div class="opciones">
+					<table>
+						<tr class="opcion">
+							<td class="subtitulo"><div>'.$objeto['sub_p'].'</div></td>
+							<td class="play"><img src="'.RESOURCES_PATH.'imagenes/play.png" /></td>
+						</tr>
+						<tr class="opcion">
+							<td class="subtitulo"><div>'.$objeto['sub_s'].'</div></td>
+							<td class="play"><img src="'.RESOURCES_PATH.'imagenes/play.png" /></td>
+						</tr>
+					</table>
+					
+					
+				</div>
+			</div>';
+			/*
 			'<div class="obj_wrap" style=\'margin-left:'.$objeto['x'].'px; margin-top:'.$objeto['y'].'px;position:absolute;\' >			
 				<div  class="objeto" onmouseout="ocultarOpciones('.$objeto['id'].')">
 					<img class="obj_img" id="obj_img_id_'.$objeto['id'].'"  onmouseover="mostrarOpciones('.$objeto['id'].')" style="float:left;" src='.RESOURCES_PATH.$objeto['ruta_imagen'].' alt="img" />
@@ -146,7 +140,7 @@ audio{
 				<audio  id="obj_'.$objeto['id'].'_trad_s" controls="controls" >
 					<source src="'.RESOURCES_PATH.$objeto['trad_s'].'" type="audio/mpeg" />	  
 					Your browser does not support the audio element.		
-				</audio>';
+				</audio>';*/
 		}
 	?>		
 </div>

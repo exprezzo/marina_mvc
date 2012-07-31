@@ -5,10 +5,10 @@
 		<div class="border-left png">
 			<div class="border-right png">
 				<div class="inside png">					
-					<h2>Aplicaciones</h2>
+					<h2>Modulos</h2>
 					<br>
 					<form action='defaultController/crear_app'>
-						Crear Aplicacion<br>
+						Crear Modulo<br>
 						<label>Escriba el nombre:</label>
 						<input type="text" name="nombre" />
 						<input type="submit" value="Crear" text="text">

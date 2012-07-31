@@ -50,6 +50,7 @@ postor={
 // http://webdesignandsuch.com/create-a-post-it-note-with-css3/
 
 </style>
+
 <div id='escena' style="">
 
 <div postitId="" class="post-it">
